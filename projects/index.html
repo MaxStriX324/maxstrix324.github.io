@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="theme-color" content="#07111f">
+  <title>Проекты — Максим Стародуб / MaxStriX324</title>
+  <meta name="description" content="Проекты Максима Стародуба (MaxStriX324): тяговый инвертор, EV, STM32, ПАЗ-3206, ВАЗ-2101, автоматизация, WorkBalance и другие инженерные разработки.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://maxstrix324.github.io/projects/">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <nav class="nav"><div class="container nav-inner"><a class="brand" href="/">MaxStriX324</a><div class="nav-links"><a href="/">Главная</a><a href="/about/">Обо мне</a><a href="/projects/">Проекты</a><a href="https://github.com/MaxStriX324">GitHub</a></div></div></nav>
+
+  <header class="subhero">
+    <div class="container narrow">
+      <p class="eyebrow">PROJECTS / R&D / MAKING</p>
+      <h1>Проекты</h1>
+      <p class="lead">Не только то, чем я занимаюсь сейчас, но и вещи, через которые я к этому пришёл: от Python-автоматизации и автомобильных переделок до силовой электроники и электропривода.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <p class="section-label">01 / ENGINEERING</p>
+        <h2 class="section-title">Электроника и электропривод</h2>
+        <div class="project-cards">
+          <article class="detail-card featured-detail">
+            <div><p class="project-meta">POWER ELECTRONICS · STM32 · R&D</p><h3>Тяговый инвертор</h3><p>Разработка трёхфазного высокомощного инвертора для тягового электропривода. Силовая часть на IGBT, изолированные драйверы затворов, измерение токов и напряжений, защиты, управление и обмен по CAN.</p><div class="tags"><span>IGBT</span><span>STM32F405</span><span>CAN</span><span>HV</span><span>KiCad</span></div></div>
+            <div class="detail-note">Текущий R&D</div>
+          </article>
+
+          <article class="detail-card">
+            <div><p class="project-meta">EV · CAN · HIGH VOLTAGE</p><h3>Nissan Leaf HV Lab</h3><p>Лабораторная система на базе HV-батареи Nissan Leaf AZE0 и PDM: CAN, зарядка, управление высоковольтной частью, измерения и дальнейшая интеграция компонентов в гибридные и стационарные системы.</p><div class="tags"><span>Leaf</span><span>BMS</span><span>PDM</span><span>CAN</span></div></div>
+            <div class="detail-note">Лабораторный стенд</div>
+          </article>
+
+          <article class="detail-card">
+            <div><p class="project-meta">EMBEDDED · AUTOMOTIVE</p><h3>Универсальный блок для старых автомобилей</h3><p>Идея собственного BCM для автомобилей без современной электроники: телематика, управление освещением, автоматические сценарии и доступ со смартфона. Проект вырос из ранних экспериментов с AVR/ATmega и автомобильными сигнализациями.</p><div class="tags"><span>ATmega</span><span>Telematics</span><span>Automotive</span></div></div>
+            <div class="detail-note">Прототипирование</div>
+          </article>
+
+          <article class="detail-card">
+            <div><p class="project-meta">GPS · SENSORS · DATA</p><h3>Мониторинг качества дорог</h3><p>Опытный образец устройства с GPS, акселерометром и датчиком вибрации для автоматического сбора информации о неровностях дорожного покрытия. Идея — накопление общей базы по маршрутам коммерческого транспорта, условный «Яндекс.Кочки».</p><div class="tags"><span>GPS</span><span>Accelerometer</span><span>Data</span></div></div>
+            <div class="detail-note">Рабочий прототип</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <p class="section-label">02 / AUTOMOTIVE & TRAVEL</p>
+        <h2 class="section-title">Машины как инженерный конструктор</h2>
+        <div class="project-cards">
+          <a class="detail-card image-detail" href="https://www.drive2.ru/r/other/725506426469878483/">
+            <img src="https://a1.drive-data.ru/QBYXqbTqi2iEcwqfuGnSy5J-EtE-960.jpg" alt="ПАЗ-3206 4x4 Автодом Черепаха" loading="lazy">
+            <div><p class="project-meta">CAMPER · 4×4 · ENERGY</p><h3>ПАЗ-3206 4×4 «Черепаха»</h3><p>Полноприводный ПАЗ 2001 года, купленный как база для автономного автодома. Проект включает восстановление механики, полный демонтаж салона, планировку жилого пространства, электрику и проработку будущей гибридной силовой установки.</p><span class="text-link">Открыть бортжурнал DRIVE2 ↗</span></div>
+          </a>
+
+          <a class="detail-card" href="https://www.drive2.ru/l/726761793870890262/"><div><p class="project-meta">RESEARCH · CAMPER</p><h3>Почему именно ПАЗ</h3><p>Разбор вариантов шасси для собственного автодома: прицепы, микроавтобусы, грузовые платформы и автобус. Выбор делался не по внешнему виду, а по совокупности проходимости, объёма, ремонтопригодности и возможностей переоборудования.</p><span class="text-link">Статья на DRIVE2 ↗</span></div></a>
+
+          <a class="detail-card" href="https://www.drive2.ru/l/729374233498497002/"><div><p class="project-meta">HYBRID · ELECTRIC DRIVE · SOLAR</p><h3>Гибридный ПАЗ</h3><p>Концепция автодома с электротягой, высоковольтной батареей и солнечной генерацией. Здесь автомобильный проект напрямую пересекается с профессиональными интересами в электроприводе и силовой электронике.</p><span class="text-link">Концепция на DRIVE2 ↗</span></div></a>
+
+          <a class="detail-card" href="https://www.drive2.ru/l/726492963277898051/"><div><p class="project-meta">FIELD REPAIR · TRAVEL</p><h3>Перегон Липецк → Саратов</h3><p>Первый большой тест ПАЗа: длинный зимний перегон с проблемами пневмосистемы, морозом и ремонтом в дороге. Хорошая иллюстрация того, почему мне интересны техника и самостоятельные поездки.</p><span class="text-link">История перегона ↗</span></div></a>
+
+          <a class="detail-card" href="https://www.drive2.ru/l/741640934973783634/"><div><p class="project-meta">VAZ-2101 · ENGINE SWAP</p><h3>ВАЗ-2101: от 1.2 карбюратора к 1.6 инжектору</h3><p>Большая переделка «копейки»: техническая переборка, тормоза, трансмиссия и свап на инжекторный двигатель ВАЗ-2107 с навесным оборудованием и проводкой.</p><span class="text-link">Техническая запись ↗</span></div></a>
+
+          <article class="detail-card"><div><p class="project-meta">RESTORATION · MECHANICS</p><h3>Нива ВАЗ-2121</h3><p>Один из самых ранних больших проектов: в 16 лет собрать после покраски практически голый кузов на колёсах, запустить машину и довести её до состояния, в котором на ней можно ездить.</p></div><div class="detail-note">16 лет</div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="section-label">03 / SOFTWARE & AUTOMATION</p>
+        <h2 class="section-title">Когда проще написать своё</h2>
+        <div class="project-cards">
+          <article class="detail-card"><div><p class="project-meta">PYTHON · UBUNTU · DATABASE</p><h3>Автоматизация технической поддержки</h3><p>Самодельная система для команды поддержки: сервер из старого ПК, Ubuntu без GUI, Python-сервис проверки общей почты, БД обращений и клиентская часть в локальной сети. Статусы исключили дублирование работы и дали статистику.</p></div><div class="detail-note">Реальная эксплуатация</div></article>
+
+          <a class="detail-card" href="https://github.com/MaxStriX324/WorkBalance-Android"><div><p class="project-meta">KOTLIN · ANDROID</p><h3>WorkBalance</h3><p>Приложение для учёта рабочего времени: входы/выходы, обед, баланс часов, прогноз ухода, история и настройки нормы рабочего дня.</p><span class="text-link">GitHub ↗</span></div></a>
+
+          <a class="detail-card" href="https://github.com/MaxStriX324/poster_vk"><div><p class="project-meta">PYTHON · VK · AUTOMATION</p><h3>КНКД — автопостер</h3><p>Ранний проект автоматизации публикаций: фотографии отправлялись боту, который формировал отложенные записи для сообщества «Коты на каждый день» с заданным интервалом.</p><span class="text-link">Репозиторий poster_vk ↗</span></div></a>
+
+          <a class="detail-card" href="https://github.com/MaxStriX324/telegram_vk_chat_bot"><div><p class="project-meta">PYTHON · BOTS</p><h3>Чат-боты</h3><p>Ещё до embedded-разработки я много экспериментировал с чат-ботами. Один из заметных ранних проектов — «Петька чат-бот» во ВКонтакте; позже появился общий код для Telegram и VK.</p><span class="text-link">GitHub ↗</span></div></a>
+
+          <article class="detail-card"><div><p class="project-meta">WEB · COMMUNITY</p><h3>mechta.club</h3><p>Проект бесплатной афиши мероприятий Саратовской области: крупные события и маленькие театральные студии, библиотеки, ДК, мастерские и локальные сообщества на одной площадке.</p></div><div class="detail-note">В разработке</div></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-inner"><div><strong>Максим Стародуб · MaxStriX324</strong><p>Проекты, которые можно измерить, разобрать или запустить.</p></div><div class="footer-links"><a href="/">Главная</a><a href="/about/">Обо мне</a><a href="https://github.com/MaxStriX324">GitHub</a><a href="https://www.drive2.ru/users/maxstrix324/">DRIVE2</a></div></div></footer>
+</body>
+</html>

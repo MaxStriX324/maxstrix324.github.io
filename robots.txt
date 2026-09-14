@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maxstrix324.github.io/sitemap.xml
