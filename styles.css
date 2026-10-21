@@ -2,3 +2,17 @@
 
 /* Laboratory project: keep long Russian title within narrow screens. */
 .lab-hero h1{font-size:clamp(2.45rem,7.2vw,6.4rem);overflow-wrap:anywhere;line-height:1}
+
+/* Optional consent banner for GA4 + Yandex Metrika. */
+.analytics-consent[hidden]{display:none}
+.analytics-consent{position:fixed;left:18px;bottom:18px;z-index:1001;width:min(560px,calc(100% - 36px));padding:20px 22px;border:1px solid #455261;border-radius:14px;background:#121921;color:#edf1f5;box-shadow:0 16px 55px rgba(0,0,0,.5)}
+.analytics-consent-inner{display:flex;flex-direction:column;gap:14px}
+.analytics-consent strong{font-size:1.06rem}
+.analytics-consent p{margin:8px 0 0;color:#b5c0cc;font-size:.92rem;line-height:1.5}
+.analytics-consent p a{color:#e3ebf4}
+.analytics-consent-actions{display:flex;gap:10px;flex-wrap:wrap}
+.analytics-consent-actions button{border:1px solid #667280;border-radius:8px;background:#222b35;color:#edf1f5;padding:10px 16px;cursor:pointer;font:inherit}
+.analytics-consent-actions button:hover{border-color:#dce3ea}
+.analytics-consent-actions .analytics-consent-allow{background:#edf1f5;color:#10151a;border-color:#edf1f5}
+.analytics-consent-actions button:focus-visible{outline:2px solid #c2d8fa;outline-offset:3px}
+@media(max-width:650px){.analytics-consent{left:10px;bottom:10px;width:calc(100% - 20px);padding:16px}}
