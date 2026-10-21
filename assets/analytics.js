@@ -1,15 +1,14 @@
 /*
  * Personal site metrics: Google Analytics 4 + Yandex Metrika.
- * Configure the TWO IDs below after creating new counters for
- * https://maxstrix324.github.io/ (never reuse 900pyk.club IDs).
- * While IDs are blank, no consent popup or third-party script is loaded.
+ * Dedicated counters for https://maxstrix324.github.io/.
+ * Third-party analytics load only after explicit consent.
  */
 (function () {
   "use strict";
 
   const CONFIG = {
-    googleMeasurementId: "", // Example: G-XXXXXXXXXX
-    yandexCounterId: 0       // Example: 12345678
+    googleMeasurementId: "G-L18YE7WY1F", // Personal website GA4 measurement ID
+    yandexCounterId: 113706082        // Personal website Yandex Metrika counter
   };
   const CONSENT_KEY = "maxstrix324-analytics-consent-v1";
   const gaId = /^G-[A-Z0-9]+$/.test(CONFIG.googleMeasurementId)
@@ -71,7 +70,7 @@
       accurateTrackBounce: true,
       webvisor: false
     });
-    addScript("https://mc.yandex.ru/metrika/tag.js");
+    addScript("https://mc.yandex.ru/metrika/tag.js?id=" + encodeURIComponent(String(ymId)));
   }
 
   function startAnalytics() {
