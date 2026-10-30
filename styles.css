@@ -16,3 +16,13 @@
 .analytics-consent-actions .analytics-consent-allow{background:#edf1f5;color:#10151a;border-color:#edf1f5}
 .analytics-consent-actions button:focus-visible{outline:2px solid #c2d8fa;outline-offset:3px}
 @media(max-width:650px){.analytics-consent{left:10px;bottom:10px;width:calc(100% - 20px);padding:16px}}
+
+/* Portfolio galleries: real project photos, uncropped, captions for context. */
+.project-photo-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:25px 0}
+.project-photo{margin:0;overflow:hidden;border:1px solid #27313b;border-radius:12px;background:#111820}
+.project-photo a{display:block;background:#0b0d11}
+.project-photo img{width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;display:block}
+.project-photo figcaption{padding:10px 13px;font-size:.85rem;color:#b5c0cb}
+.project-photo-source{font-size:.83rem!important;color:#8493a2!important}
+.project-photo-source a{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:700px){.project-photo-gallery{grid-template-columns:1fr;gap:12px}}
