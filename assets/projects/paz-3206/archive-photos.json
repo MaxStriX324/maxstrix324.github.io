@@ -1,0 +1,30 @@
+[
+  {
+    "name": "paz-winter",
+    "path": "/assets/projects/paz-3206/paz-winter.webp",
+    "caption": "ПАЗ-3206 зимой после покупки",
+    "source": "1.pdf",
+    "pdf_page": 4
+  },
+  {
+    "name": "paz-outside",
+    "path": "/assets/projects/paz-3206/paz-outside.webp",
+    "caption": "ПАЗ-3206 до переделки кузова",
+    "source": "14.pdf",
+    "pdf_page": 2
+  },
+  {
+    "name": "paz-floor-opening",
+    "path": "/assets/projects/paz-3206/paz-floor-opening.webp",
+    "caption": "Разобранный салон и каркас пола",
+    "source": "15.pdf",
+    "pdf_page": 3
+  },
+  {
+    "name": "paz-future-saloon",
+    "path": "/assets/projects/paz-3206/paz-future-saloon.webp",
+    "caption": "Разборка внутренней отделки салона",
+    "source": "10.pdf",
+    "pdf_page": 10
+  }
+]
