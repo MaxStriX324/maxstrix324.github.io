@@ -1,0 +1,101 @@
+[
+  {
+    "name": "emergency-door-before",
+    "caption": "Аварийная дверь до демонтажа",
+    "source_article": "https://www.drive2.ru/l/746631068496444355/",
+    "source_pdf": "18.pdf",
+    "source_pdf_page": 2,
+    "original_url": "https://a1.drive-data.ru/_ZJei37iTK02Leg3DsY0xog4h_M-1920.jpg",
+    "path": "/assets/projects/paz-3206/emergency-door-before.webp",
+    "width": 517,
+    "height": 919
+  },
+  {
+    "name": "door-opening",
+    "caption": "Проём после демонтажа аварийной двери",
+    "source_article": "https://www.drive2.ru/l/746631068496444355/",
+    "source_pdf": "18.pdf",
+    "source_pdf_page": 9,
+    "original_url": "https://a1.drive-data.ru/xjiKaQDu_JPHlMrrXH3FDTYFKVs-1920.jpg",
+    "path": "/assets/projects/paz-3206/door-opening.webp",
+    "width": 517,
+    "height": 919
+  },
+  {
+    "name": "removed-door",
+    "caption": "Снятая аварийная дверь рядом с автобусом",
+    "source_article": "https://www.drive2.ru/l/746631068496444355/",
+    "source_pdf": "18.pdf",
+    "source_pdf_page": 9,
+    "original_url": "https://a1.drive-data.ru/ZgVVNwtRkHDzJnMJmlvpFfNPZFE-1920.jpg",
+    "path": "/assets/projects/paz-3206/removed-door.webp",
+    "width": 1400,
+    "height": 787
+  },
+  {
+    "name": "door-fitted",
+    "caption": "Примерка листа при закрытии проёма",
+    "source_article": "https://www.drive2.ru/l/746631068496444355/",
+    "source_pdf": "18.pdf",
+    "source_pdf_page": 13,
+    "original_url": "https://a1.drive-data.ru/SQPKdlbQafmoYE2AcDXu_aDJJmc-1920.jpg",
+    "path": "/assets/projects/paz-3206/door-fitted.webp",
+    "width": 517,
+    "height": 919
+  },
+  {
+    "name": "closed-opening",
+    "caption": "Закрываем старый проём аварийной двери",
+    "source_article": "https://www.drive2.ru/l/746631068496444355/",
+    "source_pdf": "18.pdf",
+    "source_pdf_page": 14,
+    "original_url": "https://a1.drive-data.ru/hTMfZVxYD67g7w7S9fMzt8aEVKw-1920.jpg",
+    "path": "/assets/projects/paz-3206/closed-opening.webp",
+    "width": 517,
+    "height": 919
+  },
+  {
+    "name": "saloon-disassembly",
+    "caption": "Разобранный салон автобуса",
+    "source_article": "https://www.drive2.ru/l/746631068496444355/",
+    "source_pdf": "18.pdf",
+    "source_pdf_page": 21,
+    "original_url": "https://a1.drive-data.ru/kGe1-Sog3YpS9sxzSg091vYWkeY-1920.jpg",
+    "path": "/assets/projects/paz-3206/saloon-disassembly.webp",
+    "width": 1400,
+    "height": 787
+  },
+  {
+    "name": "paz-exterior",
+    "caption": "Внешний вид ПАЗ-3206 во время переделки",
+    "source_article": "https://www.drive2.ru/l/746631068496444355/",
+    "source_pdf": "18.pdf",
+    "source_pdf_page": 21,
+    "original_url": "https://a1.drive-data.ru/bdKpD7BtLLqiMtnY8NEz1gyMPDQ-1920.jpg",
+    "path": "/assets/projects/paz-3206/paz-exterior.webp",
+    "width": 1400,
+    "height": 787
+  },
+  {
+    "name": "body-restoration",
+    "caption": "Промежуточные результаты работ по кузову",
+    "source_article": "https://www.drive2.ru/l/746631068496444355/",
+    "source_pdf": "18.pdf",
+    "source_pdf_page": 22,
+    "original_url": "https://a1.drive-data.ru/JzKVf5Be5Jut4jTd3BYV3PA0dEs-1920.jpg",
+    "path": "/assets/projects/paz-3206/body-restoration.webp",
+    "width": 1400,
+    "height": 787
+  },
+  {
+    "name": "additional-parts",
+    "caption": "Дополнительные детали для переделки автобуса",
+    "source_article": "https://www.drive2.ru/l/746631068496444355/",
+    "source_pdf": "18.pdf",
+    "source_pdf_page": 28,
+    "original_url": "https://a1.drive-data.ru/R-WT2y0mNg7SqjYH9uc-VemnhZw-1920.jpg",
+    "path": "/assets/projects/paz-3206/additional-parts.webp",
+    "width": 1400,
+    "height": 787
+  }
+]
