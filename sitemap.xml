@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://maxstrix324.github.io/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://maxstrix324.github.io/about/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://maxstrix324.github.io/projects/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://maxstrix324.github.io/projects/traction-inverter/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://maxstrix324.github.io/projects/lab-automation/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://maxstrix324.github.io/privacy/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://maxstrix324.github.io/</loc></url>
+  <url><loc>https://maxstrix324.github.io/about/</loc></url>
+  <url><loc>https://maxstrix324.github.io/project/</loc></url>
+  <url><loc>https://maxstrix324.github.io/project/paz-3206/</loc></url>
+  <url><loc>https://maxstrix324.github.io/project/nissan-leaf-hv/</loc></url>
+  <url><loc>https://maxstrix324.github.io/project/workbalance/</loc></url>
+  <url><loc>https://maxstrix324.github.io/project/900-ruk/</loc></url>
+  <url><loc>https://maxstrix324.github.io/project/lab-automation/</loc></url>
+  <url><loc>https://maxstrix324.github.io/privacy/</loc></url>
 </urlset>
