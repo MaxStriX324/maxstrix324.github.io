@@ -1,0 +1,44 @@
+name: Verify laboratory project catalog
+
+on:
+  pull_request:
+    paths:
+      - "data/lab-tools.json"
+      - "scripts/sync_lab_catalog.py"
+      - "tests/test_lab_catalog_sync.py"
+      - "index.html"
+      - "project/**"
+      - "README.md"
+  push:
+    branches: [main]
+    paths:
+      - "data/lab-tools.json"
+      - "scripts/sync_lab_catalog.py"
+      - "tests/test_lab_catalog_sync.py"
+      - "index.html"
+      - "project/**"
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout website
+        uses: actions/checkout@v4
+      - name: Validate generated website content
+        run: |
+          python3 scripts/sync_lab_catalog.py --check
+          python3 -m unittest discover -s tests -p "test_lab_catalog_sync.py" -v
+      - name: Checkout public GitHub profile on main
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: actions/checkout@v4
+        with:
+          repository: MaxStriX324/MaxStriX324
+          ref: main
+          path: _profile_checkout
+          persist-credentials: false
+      - name: Validate profile catalog after publication
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: python3 scripts/sync_lab_catalog.py --check --profile-readme _profile_checkout/README.md
