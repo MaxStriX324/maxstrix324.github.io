@@ -3,6 +3,11 @@ name: Verify laboratory project catalog
 on:
   pull_request:
     paths:
+      - "data/github-about.json"
+      - "scripts/sync_github_about.py"
+      - "tests/test_portfolio_presentation.py"
+      - "assets/social/**"
+      - "about/**"
       - "data/lab-tools.json"
       - "scripts/sync_lab_catalog.py"
       - "tests/test_lab_catalog_sync.py"
@@ -16,6 +21,11 @@ on:
   push:
     branches: [main]
     paths:
+      - "data/github-about.json"
+      - "scripts/sync_github_about.py"
+      - "tests/test_portfolio_presentation.py"
+      - "assets/social/**"
+      - "about/**"
       - "data/lab-tools.json"
       - "scripts/sync_lab_catalog.py"
       - "tests/test_lab_catalog_sync.py"

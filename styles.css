@@ -76,3 +76,6 @@
 .case-outro p:not(.section-label){color:#aeb9c4;font-size:1.06rem}
 @media(max-width:980px){.rk-desktop-gallery{grid-template-columns:1fr}.rk-mobile-gallery{grid-template-columns:repeat(2,minmax(0,1fr));max-width:700px;margin:0 auto}}
 @media(max-width:620px){.case-feature-grid{grid-template-columns:1fr}.rk-mobile-gallery{gap:12px}.rk-screen figcaption{padding:10px;min-height:72px;font-size:.82rem}.case-summary-tags span{font-size:.76rem}.case-process>div{grid-template-columns:35px 1fr;gap:9px;padding:14px}}
+
+/* Project readiness is expressed in plain descriptive text, not inflated badges. */
+.project-status-note{font-size:.95rem;line-height:1.5;color:#9aaab8;max-width:760px;margin:14px 0 0}
