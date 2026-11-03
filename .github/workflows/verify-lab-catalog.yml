@@ -8,6 +8,8 @@ on:
       - "tests/test_lab_catalog_sync.py"
       - "index.html"
       - "project/**"
+      - "assets/projects/**"
+      - "styles.css"
       - "privacy/**"
       - "README.md"
       - "tests/test_documentation_contracts.py"
@@ -20,6 +22,8 @@ on:
       - "tests/test_documentation_contracts.py"
       - "index.html"
       - "project/**"
+      - "assets/projects/**"
+      - "styles.css"
       - "privacy/**"
 
 permissions:

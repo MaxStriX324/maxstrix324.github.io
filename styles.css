@@ -46,3 +46,33 @@
   .nav-links{display:flex;width:100%;flex-wrap:wrap;justify-content:center;gap:9px 15px}
   .nav-links a{font-size:.84rem;min-height:28px;display:inline-flex;align-items:center}
 }
+
+
+/* 900 рук portfolio case study: screenshots remain completely visible. */
+.case-hero h1{font-size:clamp(2.6rem,7.2vw,6rem);line-height:1;letter-spacing:-.055em;overflow-wrap:anywhere}
+.case-summary-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}
+.case-summary-tags span{display:inline-flex;align-items:center;border:1px solid #34424c;border-radius:999px;background:#13202a;padding:7px 12px;font-size:.83rem;color:#d2dfe7}
+.case-intro .article h2{margin-top:1.3em}
+.case-feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0 8px}
+.case-feature{padding:21px;border:1px solid #29323b;border-radius:12px;background:#10151a}
+.case-feature strong{font-size:1.04rem;color:#edf1f5}
+.article .case-feature p{font-size:.96rem;line-height:1.55;margin:9px 0 0;color:#a7b4c0}
+.case-section-lead{max-width:890px;color:#adb9c4;font-size:1.06rem}
+#screenshots{scroll-margin-top:110px}
+.case-gallery-title{font-size:clamp(1.4rem,3vw,1.9rem);margin:35px 0 16px;color:#e1e9f0}
+.rk-desktop-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.rk-mobile-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;align-items:start}
+.rk-screen{margin:0;border:1px solid #2e3842;border-radius:14px;background:#10161d;overflow:hidden;min-width:0}
+.rk-screen>a{display:block;background:#090e13}
+.rk-screen img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain;object-position:center;background:#0a0e13}
+.rk-screen figcaption{display:flex;flex-direction:column;gap:4px;min-height:76px;padding:13px 15px;color:#99aab8;font-size:.88rem;line-height:1.5}
+.rk-screen figcaption strong{font-size:.97rem;color:#e6edf3}
+.rk-screen a:focus-visible{outline:2px solid #bcd5ef;outline-offset:-3px}
+.case-process{display:grid;gap:13px;margin:24px 0}
+.case-process>div{display:grid;grid-template-columns:48px 1fr;column-gap:14px;padding:16px 18px;border:1px solid #29323b;border-radius:12px;background:#10151a}
+.case-process span{grid-row:span 2;font-weight:700;font-size:1.2rem;color:#849caa}
+.case-process strong{font-size:1.04rem;color:#e5edf3}
+.article .case-process p{font-size:.95rem;margin:5px 0 0}
+.case-outro p:not(.section-label){color:#aeb9c4;font-size:1.06rem}
+@media(max-width:980px){.rk-desktop-gallery{grid-template-columns:1fr}.rk-mobile-gallery{grid-template-columns:repeat(2,minmax(0,1fr));max-width:700px;margin:0 auto}}
+@media(max-width:620px){.case-feature-grid{grid-template-columns:1fr}.rk-mobile-gallery{gap:12px}.rk-screen figcaption{padding:10px;min-height:72px;font-size:.82rem}.case-summary-tags span{font-size:.76rem}.case-process>div{grid-template-columns:35px 1fr;gap:9px;padding:14px}}
