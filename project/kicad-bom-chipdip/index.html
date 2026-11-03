@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="theme-color" content="#07111f">
+  <title>KiCad BOM → ChipDip — MaxStriX324</title>
+  <meta name="description" content="Конвертер BOM из KiCad в TXT для поиска компонентов в ChipDip: артикулы, таблицы проверки и проектные сопоставления MPN.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://maxstrix324.github.io/project/kicad-bom-chipdip/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="KiCad BOM → ChipDip — MaxStriX324">
+  <meta property="og:description" content="Конвертер BOM из KiCad в TXT для поиска компонентов в ChipDip: артикулы, таблицы проверки и проектные сопоставления MPN.">
+  <meta property="og:url" content="https://maxstrix324.github.io/project/kicad-bom-chipdip/">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="nav"><div class="container nav-inner"><a class="brand" href="/">MaxStriX324</a><div class="nav-links"><a href="/">Главная</a><a href="/about/">Обо мне</a><a href="/project/">Проекты</a><a href="https://github.com/MaxStriX324">GitHub</a></div></div></nav>
+  <header class="subhero"><div class="container narrow">
+    <p class="eyebrow">KICAD · BOM · COMPONENTS · PYTHON</p>
+    <h1 style="font-size:clamp(2.5rem,7vw,6.4rem);line-height:1;overflow-wrap:anywhere">KiCad BOM → ChipDip</h1>
+    <p class="lead">Преобразование CSV-спецификации KiCad в удобный список компонентов для поиска и проверки перед закупкой.</p>
+    <div class="actions"><a class="button primary" href="/project/lab-automation/">Автоматизация лаборатории</a><a class="button" href="https://github.com/MaxStriX324/kicad-bom-chipdip">Исходники и README ↗</a></div>
+  </div></header>
+  <main><section class="section"><div class="container article-layout">
+    <aside class="article-aside"><p class="section-label">ПРОЕКТ / КРАТКО</p><div class="fact-list">
+      <p><span>Вход</span><strong>CSV из KiCad</strong></p>
+      <p><span>Выход</span><strong>TXT и CSV-отчёты</strong></p>
+      <p><span>Платформа</span><strong>Windows · Python 3.9+</strong></p>
+      <p><span>Состояние</span><strong>Открытые исходники · v6</strong></p>
+    </div></aside>
+    <article class="article">
+      <h2>Задача</h2>
+      <p>После проектирования платы экспортирую спецификацию компонентов из KiCad. Конвертер формирует один полный TXT-файл с количеством по каждой учитываемой позиции, чтобы перенести список на сайт поиска компонентов. Компоненты DNP и исключённые из BOM позиции в закупку не попадают.</p>
+      <h2>Что получает пользователь</h2>
+      <p>Основной результат — файл <code>ИМЯ_chipdip.txt</code>. Дополнительно формируются списки подтверждённых артикулов MPN, кандидатов, таблицы для проверки и шаблон сопоставления с выбранными компонентами.</p>
+      <p>Если у компонентов нет точных артикулов, программа может вывести поисковые описания. Сопоставления из отдельного файла применяются к конкретной спецификации, а не ко всем платам автоматически.</p>
+      <h2>Ограничения</h2>
+      <p>Полученный TXT — <strong>список для поиска, а не готовый подтверждённый заказ</strong>. Перед покупкой необходимо сверить тип, характеристики, корпус, габариты и наличие. Конвертер не обращается к API ChipDip и не проверяет складские остатки.</p>
+      <h2>Исходники и документация</h2>
+      <p><a class="text-link" href="https://github.com/MaxStriX324/kicad-bom-chipdip">Репозиторий на GitHub ↗</a> — актуальная инструкция по установке, настройкам и ограничениям.</p>
+    </article>
+  </div></section></main>
+  <footer><div class="container footer-inner"><div><strong>MaxStriX324</strong><p>Инженерные проекты и инструменты автоматизации.</p></div><div class="footer-links"><a href="/">Главная</a><a href="/project/">Проекты</a><a href="/project/lab-automation/">Лаборатория</a><a href="/privacy/">Конфиденциальность</a></div></div></footer>
+  <script defer src="/assets/analytics.js"></script>
+</body>
+</html>
