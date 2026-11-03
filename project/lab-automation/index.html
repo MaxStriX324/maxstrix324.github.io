@@ -4,10 +4,10 @@
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="theme-color" content="#07111f">
   <title>Автоматизация лаборатории — MaxStriX324</title>
-  <meta name="description" content="KiCad SVG в LaserGRBL, KiCad DRL в GRBL G-code для CNC3018 и автоматический архив измерений Rigol DHO814/DHO924S. Открытые исходники на GitHub.">
+  <meta name="description" content="Пять инженерных утилит: KiCad BOM → ChipDip, SVG → LaserGRBL, DRL → CNC3018, STM32 ST-Link Flasher и архив измерений Rigol.">
   <meta name="robots" content="index,follow"><link rel="canonical" href="https://maxstrix324.github.io/project/lab-automation/">
   <meta property="og:type" content="website"><meta property="og:title" content="Автоматизация лаборатории — MaxStriX324">
-  <meta property="og:description" content="Лазерная подготовка плат, сверловка CNC3018 и сортировка осциллограмм Rigol.">
+  <meta property="og:description" content="Спецификации KiCad, производство плат, прошивка STM32 и архив измерений Rigol.">
   <meta property="og:url" content="https://maxstrix324.github.io/project/lab-automation/">
   <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -15,48 +15,36 @@
   <nav class="nav"><div class="container nav-inner"><a class="brand" href="/">MaxStriX324</a><div class="nav-links"><a href="/">Главная</a><a href="/about/">Обо мне</a><a href="/project/">Проекты</a><a href="https://github.com/MaxStriX324">GitHub</a></div></div></nav>
   <header class="subhero lab-hero"><div class="container">
     <p class="eyebrow">ENGINEERING / PYTHON / DIY TOOLS</p><h1>Автоматизация<br>лаборатории</h1>
-    <p class="lead">Инструменты для реальных инженерных задач. Пока работаю с печатными платами, станками и осциллографами, рутинные действия помогают выполнять собственные скрипты.</p>
+    <p class="lead">Пять открытых инструментов для повторяющихся задач: от спецификации платы и подготовки производства до прошивки микроконтроллера и архива измерений.</p>
     <div class="actions"><a class="button primary" href="#tools">Инструменты ↓</a><a class="button" href="/project/">Все проекты →</a></div>
   </div></header>
   <main>
     <section class="section" id="tools"><div class="container">
-      <p class="section-label">01 / THREE TOOLS</p><h2 class="section-title">От KiCad до измерений</h2>
+      <p class="section-label">01 / FIVE TOOLS</p><h2 class="section-title">От KiCad до измерений</h2>
       <div class="project-cards">
-        <a class="detail-card featured-detail" href="https://github.com/MaxStriX324/kicad-svg-lasergrbl">
-          <div><p class="project-meta">PCB · LASER · PYTHON</p><h3>01 · KiCad SVG → LaserGRBL</h3>
-            <p>Экспортирую слои печатной платы в SVG. Утилита переводит каждый файл в монохромный PNG и создаёт отчёт с физическими размерами для последующего импорта в LaserGRBL.</p>
-            <p><strong>Вход:</strong> SVG из KiCad. <strong>Выход:</strong> PNG и TXT/CSV с размерами.</p>
-            <div class="tags"><span>KiCad 10</span><span>SVG</span><span>PNG</span><span>LaserGRBL</span></div>
-          </div><span class="text-link">Исходный код и инструкция ↗</span>
-        </a>
-        <a class="detail-card" href="https://github.com/MaxStriX324/kicad-drl-cnc3018">
-          <div><p class="project-meta">PCB · CNC · GRBL</p><h3>02 · KiCad DRL → CNC3018</h3>
-            <p>Конвертер читает Excellon DRL и формирует отдельные TAP-программы для каждого диаметра сверла. Смена инструмента — вручную.</p>
-            <p><strong>Вход:</strong> DRL из KiCad. <strong>Выход:</strong> G-code (.tap) для GRBL. Пазы определяются, но автоматически не фрезеруются.</p>
-            <div class="tags"><span>KiCad</span><span>Excellon</span><span>CNC3018</span><span>G-code</span></div>
-          </div><span class="text-link">Исходный код и инструкция ↗</span>
-        </a>
-        <a class="detail-card" href="https://github.com/MaxStriX324/rigol-oscilloscope-sorter">
-          <div><p class="project-meta">MEASUREMENTS · ARCHIVE</p><h3>03 · Rigol Oscilloscope Sorter</h3>
-            <p>RIGOL DHO814 и DHO924S сохраняют группы измерений в сетевую папку. Скрипт ждёт завершения записи, присваивает номер, сортирует файлы по датам, сохраняет исходники и журналы.</p>
-            <p><strong>Вход:</strong> PNG, CSV/BIN, STP. <strong>Выход:</strong> архив, индекс измерений и XLSX для поддерживаемых форматов.</p>
-            <div class="tags"><span>DHO814</span><span>DHO924S</span><span>SMB</span><span>Python</span><span>XLSX</span></div>
-          </div><span class="text-link">Исходный код и инструкция ↗</span>
-        </a>
+        <!-- LAB_TOOLS_GENERATED_START -->
+<a class="detail-card featured-detail" href="/project/kicad-bom-chipdip/"><div><p class="project-meta">KICAD · BOM · COMPONENTS</p><h3>01 · KiCad BOM → ChipDip</h3><p>Конвертер CSV-спецификаций KiCad в полный список для поиска компонентов, сопоставления артикулов и отчёты проверки. Итоговые позиции необходимо сверять перед заказом.</p><p><strong>Вход:</strong> CSV из KiCad <strong>Выход:</strong> TXT, отчёты и шаблон сопоставлений</p><div class="tags"><span>KiCad</span><span>CSV</span><span>TXT</span></div></div><span class="text-link">Описание и исходники →</span></a>
+<a class="detail-card" href="https://github.com/MaxStriX324/kicad-svg-lasergrbl"><div><p class="project-meta">KICAD · SVG · LASERGRBL</p><h3>02 · KiCad SVG → LaserGRBL</h3><p>Пакетный перевод SVG-слоёв KiCad в монохромные PNG с отчётами о физическом размере для импорта в LaserGRBL.</p><p><strong>Вход:</strong> SVG из KiCad <strong>Выход:</strong> PNG и отчёты с размерами</p><div class="tags"><span>KiCad 10</span><span>SVG</span><span>PNG</span></div></div><span class="text-link">Исходный код и инструкция ↗</span></a>
+<a class="detail-card" href="https://github.com/MaxStriX324/kicad-drl-cnc3018"><div><p class="project-meta">KICAD · DRL · GRBL</p><h3>03 · KiCad DRL → CNC3018</h3><p>Один TAP на входной Excellon DRL: вертикальная сортировка точек, единая программа без смены инструмента и перфорация контура.</p><p><strong>Вход:</strong> Excellon DRL <strong>Выход:</strong> G-code TAP для GRBL</p><div class="tags"><span>Excellon</span><span>CNC3018</span><span>G-code</span></div></div><span class="text-link">Исходный код и инструкция ↗</span></a>
+<a class="detail-card" href="/project/stm32-stlink-flasher/"><div><p class="project-meta">STM32 · ST-LINK · WINDOWS</p><h3>04 · STM32 ST-Link Flasher</h3><p>GUI для прошивки STM32F103/F405 через ST-Link: определение семейства MCU, запись BIN, verify и журнал. Аппаратные испытания ещё не проведены.</p><p><strong>Вход:</strong> firmware.bin из PlatformIO <strong>Выход:</strong> проверенная запись Flash и журнал</p><div class="tags"><span>STM32</span><span>ST-Link</span><span>GUI</span></div></div><span class="text-link">Описание и исходники →</span></a>
+<a class="detail-card" href="https://github.com/MaxStriX324/rigol-oscilloscope-sorter"><div><p class="project-meta">RIGOL · SMB · AUTOMATION</p><h3>05 · Rigol Oscilloscope Sorter</h3><p>Сортировка измерений DHO814/DHO924S: архив исходных PNG, CSV/BIN и STP, нумерация, XLSX для поддерживаемых данных.</p><p><strong>Вход:</strong> PNG, CSV/BIN, STP <strong>Выход:</strong> архив и XLSX поддерживаемых сигналов</p><div class="tags"><span>DHO814</span><span>DHO924S</span><span>XLSX</span></div></div><span class="text-link">Исходный код и инструкция ↗</span></a>
+<!-- LAB_TOOLS_GENERATED_END -->
       </div>
     </div></section>
     <section class="section alt"><div class="container">
-      <p class="section-label">02 / WORKFLOW</p><h2 class="section-title">Одна мастерская — три сценария</h2>
+      <p class="section-label">02 / WORKFLOW</p><h2 class="section-title">Одна мастерская — пять этапов</h2>
       <div class="grid">
-        <article class="card"><p class="card-num">01 / ПОДГОТОВКА</p><h3>Лазер и плата</h3><p>Рисую плату в KiCad, экспортирую SVG, получаю PNG и параметры для импорта с контролем масштаба.</p></article>
-        <article class="card"><p class="card-num">02 / ИЗГОТОВЛЕНИЕ</p><h3>Сверловка</h3><p>По координатам Excellon формируются программы CNC3018 с ручной сменой сверла.</p></article>
-        <article class="card"><p class="card-num">03 / ПРОВЕРКА</p><h3>Измерения</h3><p>Сохраняю данные Rigol, а сортировщик превращает разрозненные файлы в понятный архив.</p></article>
+        <article class="card"><p class="card-num">01 / КОМПОНЕНТЫ</p><h3>Спецификация</h3><p>Экспортирую BOM из KiCad, получаю полный список для поиска в ChipDip и отдельно проверяю артикулы перед заказом.</p></article>
+        <article class="card"><p class="card-num">02 / ПОДГОТОВКА</p><h3>Лазер и плата</h3><p>Экспортирую SVG и получаю монохромные PNG с параметрами физического масштаба.</p></article>
+        <article class="card"><p class="card-num">03 / ИЗГОТОВЛЕНИЕ</p><h3>Сверловка</h3><p>Преобразую Excellon DRL в один TAP для GRBL с вертикальной сортировкой точек.</p></article>
+        <article class="card"><p class="card-num">04 / ПРОШИВКА</p><h3>STM32 через ST-Link</h3><p>Использую BIN из PlatformIO, сверяю плату и MCU, записываю прошивку и проверяю Flash.</p></article>
+        <article class="card"><p class="card-num">05 / ИЗМЕРЕНИЯ</p><h3>Архив Rigol</h3><p>Сортировщик превращает сохранённые файлы DHO814/DHO924S в упорядоченный архив.</p></article>
       </div>
     </div></section>
     <section class="section"><div class="container split">
       <div><p class="section-label">03 / OPEN SOURCE</p><h2>Исходники открыты</h2></div>
       <div class="prose"><p>Каждая утилита — отдельный репозиторий с инструкциями, настройками и ограничениями. Их можно скачать и адаптировать под своё оборудование.</p>
-        <p>Для станка и лазера перед работой необходимо проверить координаты, масштаб и траекторию в холостом прогоне. Rigol-сортировщик сохраняет исходные данные, но не обещает выгрузку всех логических каналов в XLSX.</p>
+        <p>Перед заказом компонентов необходимо подтвердить артикулы и корпуса: BOM-конвертер формирует список поиска, а не готовый заказ. Для станка и лазера проверяйте координаты, масштаб и траекторию в холостом прогоне. STM32 Flasher пока не испытан на физической плате и не может по BIN подтвердить совместимость прошивки. Rigol-сортировщик сохраняет исходные данные, но не обещает выгрузку всех цифровых каналов в XLSX.</p>
         <p><a class="text-link" href="https://github.com/MaxStriX324">Все открытые проекты на GitHub ↗</a></p>
       </div>
     </div></section>

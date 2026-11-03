@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="theme-color" content="#07111f">
+  <title>STM32 ST-Link Flasher — MaxStriX324</title>
+  <meta name="description" content="GUI для прошивки STM32F103 и STM32F405 через ST-Link на Windows: загрузка BIN из PlatformIO, verify и журнал операций.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://maxstrix324.github.io/project/stm32-stlink-flasher/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="STM32 ST-Link Flasher — MaxStriX324">
+  <meta property="og:description" content="GUI для прошивки STM32F103 и STM32F405 через ST-Link на Windows: загрузка BIN из PlatformIO, verify и журнал операций.">
+  <meta property="og:url" content="https://maxstrix324.github.io/project/stm32-stlink-flasher/">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="nav"><div class="container nav-inner"><a class="brand" href="/">MaxStriX324</a><div class="nav-links"><a href="/">Главная</a><a href="/about/">Обо мне</a><a href="/project/">Проекты</a><a href="https://github.com/MaxStriX324">GitHub</a></div></div></nav>
+  <header class="subhero"><div class="container narrow">
+    <p class="eyebrow">STM32 · ST-LINK · WINDOWS · GUI</p>
+    <h1 style="font-size:clamp(2.5rem,7vw,6.4rem);line-height:1;overflow-wrap:anywhere">STM32 ST-Link Flasher</h1>
+    <p class="lead">Графическая запись и проверка firmware.bin через ST-Link без установки VS Code и PlatformIO на компьютере программатора.</p>
+    <div class="actions"><a class="button primary" href="/project/lab-automation/">Автоматизация лаборатории</a><a class="button" href="https://github.com/MaxStriX324/stm32-stlink-flasher">Исходники и README ↗</a></div>
+  </div></header>
+  <main><section class="section"><div class="container article-layout">
+    <aside class="article-aside"><p class="section-label">ПРОЕКТ / КРАТКО</p><div class="fact-list">
+      <p><span>MCU</span><strong>STM32F103 · STM32F405</strong></p>
+      <p><span>Интерфейс</span><strong>GUI / BAT / PowerShell</strong></p>
+      <p><span>Запись</span><strong>ST-Link · STM32CubeProgrammer</strong></p>
+      <p><span>Состояние</span><strong>Требуются аппаратные испытания</strong></p>
+    </div></aside>
+    <article class="article">
+      <h2>Как работает</h2>
+      <p>Программа подключается к ST-Link, определяет семейство подключённого микроконтроллера по Device ID, записывает указанный BIN во внутреннюю Flash и запускает проверку записи (verify). Результаты и журнал доступны в графическом окне; сохранённые логи помогают диагностировать ошибки.</p>
+      <h2>Откуда взять прошивку</h2>
+      <p>После сборки проекта в PlatformIO файл обычно находится по пути <code>.pio/build/ИМЯ_ОКРУЖЕНИЯ/firmware.bin</code>. Для работы прошивальщика используются Windows PowerShell и официальный STM32CubeProgrammer.</p>
+      <h2>Ограничения и безопасность</h2>
+      <p><strong>Файл BIN не содержит достоверного указания на модель STM32 или ревизию платы.</strong> Device ID помогает определить подключённое семейство, но не подтверждает совместимость конкретной прошивки. Поддерживается BIN с адресом записи 0x08000000, без смещения стороннего загрузчика.</p>
+      <p>Программа пока не была проверена на физическом оборудовании. Перед записью необходимо сверить маркировку MCU, адрес Flash и конфигурацию сборки. При работе с силовой электроникой необходимо отключить высоковольтную часть, двигатель и исполнительные механизмы; verify не подтверждает безопасность поведения прошивки.</p>
+      <h2>Исходники и документация</h2>
+      <p><a class="text-link" href="https://github.com/MaxStriX324/stm32-stlink-flasher">Репозиторий на GitHub ↗</a> — актуальная инструкция по установке, настройкам и ограничениям.</p>
+    </article>
+  </div></section></main>
+  <footer><div class="container footer-inner"><div><strong>MaxStriX324</strong><p>Инженерные проекты и инструменты автоматизации.</p></div><div class="footer-links"><a href="/">Главная</a><a href="/project/">Проекты</a><a href="/project/lab-automation/">Лаборатория</a><a href="/privacy/">Конфиденциальность</a></div></div></footer>
+  <script defer src="/assets/analytics.js"></script>
+</body>
+</html>

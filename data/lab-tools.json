@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "description": "Canonical public laboratory tools catalog for website and GitHub profile.",
+  "tools": [
+    {
+      "slug": "kicad-bom-chipdip",
+      "title": "KiCad BOM → ChipDip",
+      "repository": "https://github.com/MaxStriX324/kicad-bom-chipdip",
+      "page": "/project/kicad-bom-chipdip/",
+      "meta": "KICAD · BOM · COMPONENTS",
+      "description": "Конвертер CSV-спецификаций KiCad в полный список для поиска компонентов, сопоставления артикулов и отчёты проверки. Итоговые позиции необходимо сверять перед заказом.",
+      "profile_task": "Подготовка BOM для ChipDip",
+      "profile_result": "TXT со всеми позициями и CSV для проверки",
+      "input": "CSV из KiCad",
+      "output": "TXT, отчёты и шаблон сопоставлений",
+      "tags": [
+        "KiCad",
+        "CSV",
+        "TXT"
+      ],
+      "workflow": "спецификация компонентов",
+      "warning": "Список ChipDip не является подтверждённым заказом."
+    },
+    {
+      "slug": "kicad-svg-lasergrbl",
+      "title": "KiCad SVG → LaserGRBL",
+      "repository": "https://github.com/MaxStriX324/kicad-svg-lasergrbl",
+      "page": "",
+      "meta": "KICAD · SVG · LASERGRBL",
+      "description": "Пакетный перевод SVG-слоёв KiCad в монохромные PNG с отчётами о физическом размере для импорта в LaserGRBL.",
+      "profile_task": "Подготовка слоёв PCB для лазера",
+      "profile_result": "PNG и параметры масштаба",
+      "input": "SVG из KiCad",
+      "output": "PNG и отчёты с размерами",
+      "tags": [
+        "KiCad 10",
+        "SVG",
+        "PNG"
+      ],
+      "workflow": "лазерные изображения платы",
+      "warning": "Масштаб и полярность лазера проверяются перед обработкой."
+    },
+    {
+      "slug": "kicad-drl-cnc3018",
+      "title": "KiCad DRL → CNC3018",
+      "repository": "https://github.com/MaxStriX324/kicad-drl-cnc3018",
+      "page": "",
+      "meta": "KICAD · DRL · GRBL",
+      "description": "Один TAP на входной Excellon DRL: вертикальная сортировка точек, единая программа без смены инструмента и перфорация контура.",
+      "profile_task": "Подготовка сверловки для GRBL",
+      "profile_result": "Один TAP на DRL, вертикальная сортировка",
+      "input": "Excellon DRL",
+      "output": "G-code TAP для GRBL",
+      "tags": [
+        "Excellon",
+        "CNC3018",
+        "G-code"
+      ],
+      "workflow": "сверловка CNC3018",
+      "warning": "Сверление по контуру не заменяет чистовую фрезеровку; траекторию нужно проверять."
+    },
+    {
+      "slug": "stm32-stlink-flasher",
+      "title": "STM32 ST-Link Flasher",
+      "repository": "https://github.com/MaxStriX324/stm32-stlink-flasher",
+      "page": "/project/stm32-stlink-flasher/",
+      "meta": "STM32 · ST-LINK · WINDOWS",
+      "description": "GUI для прошивки STM32F103/F405 через ST-Link: определение семейства MCU, запись BIN, verify и журнал. Аппаратные испытания ещё не проведены.",
+      "profile_task": "Прошивка STM32F103/F405",
+      "profile_result": "GUI, запись BIN, verify и лог",
+      "input": "firmware.bin из PlatformIO",
+      "output": "проверенная запись Flash и журнал",
+      "tags": [
+        "STM32",
+        "ST-Link",
+        "GUI"
+      ],
+      "workflow": "прошивка STM32",
+      "warning": "Verify не подтверждает совместимость BIN с платой; аппаратные испытания ещё требуются."
+    },
+    {
+      "slug": "rigol-oscilloscope-sorter",
+      "title": "Rigol Oscilloscope Sorter",
+      "repository": "https://github.com/MaxStriX324/rigol-oscilloscope-sorter",
+      "page": "",
+      "meta": "RIGOL · SMB · AUTOMATION",
+      "description": "Сортировка измерений DHO814/DHO924S: архив исходных PNG, CSV/BIN и STP, нумерация, XLSX для поддерживаемых данных.",
+      "profile_task": "Архивирование измерений",
+      "profile_result": "Архив PNG/CSV/BIN/STP, XLSX",
+      "input": "PNG, CSV/BIN, STP",
+      "output": "архив и XLSX поддерживаемых сигналов",
+      "tags": [
+        "DHO814",
+        "DHO924S",
+        "XLSX"
+      ],
+      "workflow": "архивирование измерений",
+      "warning": "Экспорт всех 16 цифровых каналов PLA2216 в XLSX не заявлен."
+    }
+  ]
+}
