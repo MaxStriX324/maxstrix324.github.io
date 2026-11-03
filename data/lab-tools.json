@@ -84,9 +84,9 @@
       "repository": "https://github.com/MaxStriX324/rigol-oscilloscope-sorter",
       "page": "",
       "meta": "RIGOL · SMB · AUTOMATION",
-      "description": "Сортировка измерений DHO814/DHO924S: архив исходных PNG, CSV/BIN и STP, нумерация, XLSX для поддерживаемых данных.",
+      "description": "Сортировка DHO814/DHO924S: архив PNG, CSV/BIN, STP. Экспорт в XLSX более четырёх каналов подтверждён пользователем на реальном оборудовании.",
       "profile_task": "Архивирование измерений",
-      "profile_result": "Архив PNG/CSV/BIN/STP, XLSX",
+      "profile_result": "Архив PNG/CSV/BIN/STP; Excel с более 4 каналами",
       "input": "PNG, CSV/BIN, STP",
       "output": "архив и XLSX поддерживаемых сигналов",
       "tags": [
@@ -95,7 +95,7 @@
         "XLSX"
       ],
       "workflow": "архивирование измерений",
-      "warning": "Экспорт всех 16 цифровых каналов PLA2216 в XLSX не заявлен."
+      "warning": "Экспорт более 4 каналов в Excel практически подтверждён; декодирование всех D0–D15 из BIN не подтверждено."
     }
   ]
 }
