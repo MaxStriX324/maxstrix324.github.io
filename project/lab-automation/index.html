@@ -22,41 +22,13 @@
     <section class="section" id="tools"><div class="container">
       <p class="section-label">01 / FIVE TOOLS</p><h2 class="section-title">От KiCad до измерений</h2>
       <div class="project-cards">
-        <a class="detail-card featured-detail" href="/project/kicad-bom-chipdip/">
-          <div><p class="project-meta">PCB · BOM · COMPONENTS</p><h3>01 · KiCad BOM → ChipDip</h3>
-            <p>Конвертер экспортированной CSV-спецификации KiCad в полный TXT для поиска компонентов в ChipDip. Дополнительно формирует список подтверждённых артикулов и отчёты по позициям, требующим проверки.</p>
-            <p><strong>Вход:</strong> CSV из KiCad. <strong>Выход:</strong> TXT, CSV-отчёты, шаблон сопоставления артикулов.</p>
-            <div class="tags"><span>KiCad</span><span>CSV</span><span>TXT</span><span>Python</span></div>
-          </div><span class="text-link">Описание и исходники →</span>
-        </a>
-        <a class="detail-card" href="https://github.com/MaxStriX324/kicad-svg-lasergrbl">
-          <div><p class="project-meta">PCB · LASER · PYTHON</p><h3>02 · KiCad SVG → LaserGRBL</h3>
-            <p>Экспортирую слои печатной платы в SVG. Утилита переводит каждый файл в монохромный PNG и создаёт отчёт с физическими размерами для последующего импорта в LaserGRBL.</p>
-            <p><strong>Вход:</strong> SVG из KiCad. <strong>Выход:</strong> PNG и TXT/CSV с размерами.</p>
-            <div class="tags"><span>KiCad 10</span><span>SVG</span><span>PNG</span><span>LaserGRBL</span></div>
-          </div><span class="text-link">Исходный код и инструкция ↗</span>
-        </a>
-        <a class="detail-card" href="https://github.com/MaxStriX324/kicad-drl-cnc3018">
-          <div><p class="project-meta">PCB · CNC · GRBL</p><h3>03 · KiCad DRL → CNC3018</h3>
-            <p>Конвертер читает Excellon DRL и создаёт один TAP на входной файл, объединяя координаты разных диаметров. Точки упорядочиваются по вертикальным полосам; режущие контуры могут преобразовываться в последовательность отверстий.</p>
-            <p><strong>Вход:</strong> DRL из KiCad. <strong>Выход:</strong> G-code (.tap) для GRBL без автоматической смены инструмента. Перфорация не заменяет фрезеровку пазов.</p>
-            <div class="tags"><span>KiCad</span><span>Excellon</span><span>CNC3018</span><span>G-code</span></div>
-          </div><span class="text-link">Исходный код и инструкция ↗</span>
-        </a>
-        <a class="detail-card" href="/project/stm32-stlink-flasher/">
-          <div><p class="project-meta">EMBEDDED · STM32 · ST-LINK</p><h3>04 · STM32 ST-Link Flasher</h3>
-            <p>Графическая прошивка STM32F103 и STM32F405 на Windows с определением семейства через ST-Link, записью firmware.bin и проверкой Flash. Сохраняется журнал операций.</p>
-            <p><strong>Вход:</strong> BIN из PlatformIO. <strong>Выход:</strong> записанная и верифицированная Flash, лог. На реальном оборудовании ещё не проверялось.</p>
-            <div class="tags"><span>STM32</span><span>ST-Link</span><span>Windows</span><span>PowerShell</span></div>
-          </div><span class="text-link">Описание и исходники →</span>
-        </a>
-        <a class="detail-card" href="https://github.com/MaxStriX324/rigol-oscilloscope-sorter">
-          <div><p class="project-meta">MEASUREMENTS · ARCHIVE</p><h3>05 · Rigol Oscilloscope Sorter</h3>
-            <p>RIGOL DHO814 и DHO924S сохраняют группы измерений в сетевую папку. Скрипт ждёт завершения записи, присваивает номер, сортирует файлы по датам, сохраняет исходники и журналы.</p>
-            <p><strong>Вход:</strong> PNG, CSV/BIN, STP. <strong>Выход:</strong> архив, индекс измерений и XLSX для поддерживаемых форматов.</p>
-            <div class="tags"><span>DHO814</span><span>DHO924S</span><span>SMB</span><span>Python</span><span>XLSX</span></div>
-          </div><span class="text-link">Исходный код и инструкция ↗</span>
-        </a>
+        <!-- LAB_TOOLS_GENERATED_START -->
+<a class="detail-card featured-detail" href="/project/kicad-bom-chipdip/"><div><p class="project-meta">KICAD · BOM · COMPONENTS</p><h3>01 · KiCad BOM → ChipDip</h3><p>Конвертер CSV-спецификаций KiCad в полный список для поиска компонентов, сопоставления артикулов и отчёты проверки. Итоговые позиции необходимо сверять перед заказом.</p><p><strong>Вход:</strong> CSV из KiCad <strong>Выход:</strong> TXT, отчёты и шаблон сопоставлений</p><div class="tags"><span>KiCad</span><span>CSV</span><span>TXT</span></div></div><span class="text-link">Описание и исходники →</span></a>
+<a class="detail-card" href="https://github.com/MaxStriX324/kicad-svg-lasergrbl"><div><p class="project-meta">KICAD · SVG · LASERGRBL</p><h3>02 · KiCad SVG → LaserGRBL</h3><p>Пакетный перевод SVG-слоёв KiCad в монохромные PNG с отчётами о физическом размере для импорта в LaserGRBL.</p><p><strong>Вход:</strong> SVG из KiCad <strong>Выход:</strong> PNG и отчёты с размерами</p><div class="tags"><span>KiCad 10</span><span>SVG</span><span>PNG</span></div></div><span class="text-link">Исходный код и инструкция ↗</span></a>
+<a class="detail-card" href="https://github.com/MaxStriX324/kicad-drl-cnc3018"><div><p class="project-meta">KICAD · DRL · GRBL</p><h3>03 · KiCad DRL → CNC3018</h3><p>Один TAP на входной Excellon DRL: вертикальная сортировка точек, единая программа без смены инструмента и перфорация контура.</p><p><strong>Вход:</strong> Excellon DRL <strong>Выход:</strong> G-code TAP для GRBL</p><div class="tags"><span>Excellon</span><span>CNC3018</span><span>G-code</span></div></div><span class="text-link">Исходный код и инструкция ↗</span></a>
+<a class="detail-card" href="/project/stm32-stlink-flasher/"><div><p class="project-meta">STM32 · ST-LINK · WINDOWS</p><h3>04 · STM32 ST-Link Flasher</h3><p>GUI для прошивки STM32F103/F405 через ST-Link: определение семейства MCU, запись BIN, verify и журнал. Аппаратные испытания ещё не проведены.</p><p><strong>Вход:</strong> firmware.bin из PlatformIO <strong>Выход:</strong> проверенная запись Flash и журнал</p><div class="tags"><span>STM32</span><span>ST-Link</span><span>GUI</span></div></div><span class="text-link">Описание и исходники →</span></a>
+<a class="detail-card" href="https://github.com/MaxStriX324/rigol-oscilloscope-sorter"><div><p class="project-meta">RIGOL · SMB · AUTOMATION</p><h3>05 · Rigol Oscilloscope Sorter</h3><p>Сортировка измерений DHO814/DHO924S: архив исходных PNG, CSV/BIN и STP, нумерация, XLSX для поддерживаемых данных.</p><p><strong>Вход:</strong> PNG, CSV/BIN, STP <strong>Выход:</strong> архив и XLSX поддерживаемых сигналов</p><div class="tags"><span>DHO814</span><span>DHO924S</span><span>XLSX</span></div></div><span class="text-link">Исходный код и инструкция ↗</span></a>
+<!-- LAB_TOOLS_GENERATED_END -->
       </div>
     </div></section>
     <section class="section alt"><div class="container">
