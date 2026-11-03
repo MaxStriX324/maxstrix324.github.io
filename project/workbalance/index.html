@@ -17,21 +17,51 @@
 <header class="subhero"><div class="container narrow">
 <p class="eyebrow">ANDROID · KOTLIN · OPEN SOURCE</p>
 <h1 style="font-size:clamp(2.5rem,7vw,6.4rem);line-height:1;overflow-wrap:anywhere">WorkBalance для Android</h1>
-<p class="lead">Локальное Android-приложение, помогающее учитывать отработанные часы и планировать завершение рабочего дня.</p>
-<div class="actions"><a class="button primary" href="/project/">Все проекты</a><a class="button" href="https://github.com/MaxStriX324/WorkBalance-Android">WorkBalance на GitHub ↗</a></div>
+<p class="lead">Приложение для самостоятельного учёта рабочего времени: отметки входа и выхода, обязательные перерывы, календарь, месячный баланс и прогноз времени ухода. Без регистрации и собственного сервера.</p>
+<div class="actions"><a class="button primary" href="https://github.com/MaxStriX324/WorkBalance-Android/releases/tag/v0.8.0">Скачать APK · v0.8.0 ↗</a><a class="button" href="#screenshots">Посмотреть интерфейс</a><a class="button" href="https://github.com/MaxStriX324/WorkBalance-Android">Исходники на GitHub ↗</a></div>
 </div></header>
 <main><section class="section"><div class="container article-layout">
 <aside class="article-aside"><p class="section-label">ПРОЕКТ / КРАТКО</p><div class="fact-list">
-<p><span>Платформа</span><strong>Android</strong></p>
-<p><span>Язык</span><strong>Kotlin</strong></p>
-<p><span>Тип</span><strong>Открытый исходный код</strong></p>
-<p><span>Данные</span><strong>Локальный учёт</strong></p>
+<p><span>Платформа</span><strong>Android 8.0+</strong></p>
+<p><span>Технологии</span><strong>Kotlin · Compose · Room</strong></p>
+<p><span>Исходники</span><strong>MIT · открытый код</strong></p>
+<p><span>Интерфейс</span><strong>Русский и английский</strong></p>
 </div></aside>
 <article class="article">
-<h2>Что решает</h2><p>Фиксирует приход, уход и перерывы, рассчитывает баланс рабочего времени и помогает оценивать, когда можно закончить рабочий день.</p>
-<h2>Разработка</h2><p>Исходный код и инструкции опубликованы на GitHub. Страница проекта служит краткой точкой входа; актуальные технические подробности находятся в репозитории.</p>
-<h2>Материалы и ссылки</h2>
-<p><a class="text-link" href="https://github.com/MaxStriX324/WorkBalance-Android">WorkBalance на GitHub ↗</a> — исходники и документация</p>
+<h2>Зачем я написал WorkBalance</h2>
+<p>При гибком графике важно понимать не только сколько часов прошло с прихода, но и сколько времени зачтено с учётом обеда, каков баланс за месяц и когда можно закончить сегодняшний день. WorkBalance помогает вести эти расчёты самостоятельно, без привязки к рабочей системе пропусков.</p>
+
+<h2>Что умеет</h2>
+<div class="workbalance-feature-grid">
+  <div class="workbalance-feature"><strong>Учёт дня</strong><p>Входы, выходы, несколько интервалов за смену, редактирование записей за любую дату.</p></div>
+  <div class="workbalance-feature"><strong>Перерывы</strong><p>Обязательный обед отдельно от дополнительного отсутствия; настраиваемые нормы дня.</p></div>
+  <div class="workbalance-feature"><strong>Календарь и прогноз</strong><p>Баланс за день и месяц, прогноз ухода, производственный календарь России на 2026 год.</p></div>
+  <div class="workbalance-feature"><strong>Повседневные инструменты</strong><p>Локальные напоминания, виджет, экспорт CSV, резервная копия и восстановление JSON.</p></div>
+</div>
+
+<h2 id="screenshots">Интерфейс приложения</h2>
+<p>Настоящие скриншоты из репозитория WorkBalance. Показана тёмная тема; приложение поддерживает русский и английский языки. Изображения не обрезаются.</p>
+<div class="workbalance-shot-grid">
+  <figure class="workbalance-shot"><a href="/assets/projects/workbalance/today-en.webp" aria-label="Открыть экран рабочего дня"><img src="/assets/projects/workbalance/today-en.webp" alt="WorkBalance: экран текущего рабочего дня, время и баланс часов" loading="lazy" decoding="async"></a><figcaption>Рабочий день · EN</figcaption></figure>
+  <figure class="workbalance-shot"><a href="/assets/projects/workbalance/calendar-ru.webp" aria-label="Открыть календарь рабочего времени"><img src="/assets/projects/workbalance/calendar-ru.webp" alt="WorkBalance: календарь с рабочими днями, нормами и итогами по-русски" loading="lazy" decoding="async"></a><figcaption>Календарь · RU</figcaption></figure>
+  <figure class="workbalance-shot"><a href="/assets/projects/workbalance/forecast-ru.webp" aria-label="Открыть прогноз месячного баланса"><img src="/assets/projects/workbalance/forecast-ru.webp" alt="WorkBalance: прогноз выполнения месячной нормы по-русски" loading="lazy" decoding="async"></a><figcaption>Прогноз месяца · RU</figcaption></figure>
+  <figure class="workbalance-shot"><a href="/assets/projects/workbalance/settings-en.webp" aria-label="Открыть настройки приложения"><img src="/assets/projects/workbalance/settings-en.webp" alt="WorkBalance: настройки языка, рабочего графика и нормы перерыва" loading="lazy" decoding="async"></a><figcaption>Настройки · EN</figcaption></figure>
+</div>
+<p class="workbalance-caption">Скриншоты демонстрационной сборки; состав экранов может изменяться по мере разработки.</p>
+
+<h2>Как учитывается рабочее время</h2>
+<p>Приложение учитывает несколько интервалов присутствия за день. Выходы вне рабочего места сначала покрывают обязательный обед; недостающая часть обеда вычитается из зачтённого времени. Отдельно рассчитываются дневная и месячная нормы, баланс и прогноз окончания дня.</p>
+<p>Это личный инструмент планирования, <strong>не официальный табель работодателя</strong>. Итоги следует сверять с установленными правилами учёта рабочего времени.</p>
+
+<h2>Техническая часть и приватность</h2>
+<p>Kotlin, Jetpack Compose и локальная база Room. Сборки для Google Play и RuStore не требуют доступа к интернету; GitHub-вариант может проверять опубликованные версии. Приложение не требует регистрации и не содержит рекламы или собственной аналитики. Резервные копии и CSV создаются по действию пользователя.</p>
+<p>Основной сценарий учёта и редактирования работает и покрыт модульными тестами. Сравнение расчётов с обезличенными выгрузками реальной системы прохода обозначено в репозитории как следующий этап проверки.</p>
+
+<h2>Как установить</h2>
+<p>Актуальный опубликованный релиз на GitHub — <a class="text-link" href="https://github.com/MaxStriX324/WorkBalance-Android/releases/tag/v0.8.0">WorkBalance v0.8.0 (14 сентября 2026 года) ↗</a>. В релизе размещён APK для ручной установки на Android 8.0+. Загружайте приложение только со страницы автора и перед обновлением учитывайте совместимость подписи установленного APK.</p>
+<h2>Исходники и документация</h2>
+<p><a class="text-link" href="https://github.com/MaxStriX324/WorkBalance-Android/blob/master/README_RU.md">Возможности и скриншоты на GitHub ↗</a></p>
+<p><a class="text-link" href="https://github.com/MaxStriX324/WorkBalance-Android/blob/master/docs/BUILDING.md">Инструкция по сборке Android APK ↗</a></p>
 </article>
 </div></section></main>
 <footer><div class="container footer-inner"><div><strong>MaxStriX324</strong><p>Личные инженерные и автомобильные проекты.</p></div><div class="footer-links"><a href="/">Главная</a><a href="/project/">Проекты</a><a href="/privacy/">Конфиденциальность</a></div></div></footer>

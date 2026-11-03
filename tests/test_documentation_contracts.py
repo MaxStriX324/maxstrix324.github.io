@@ -39,6 +39,27 @@ class DocumentationContractsTests(unittest.TestCase):
             self.assertIn(required, page)
         self.assertIn("Произвольный CSV без этих заголовков не поддерживается", page)
 
+    def test_workbalance_gallery_uses_local_real_screenshots(self):
+        page = self.read_page("project/workbalance")
+        for shot in ("today-en.webp", "calendar-ru.webp", "forecast-ru.webp", "settings-en.webp"):
+            with self.subTest(shot=shot):
+                path = ROOT / "assets" / "projects" / "workbalance" / shot
+                self.assertTrue(path.is_file(), f"Missing local screenshot {path}")
+                self.assertIn("/assets/projects/workbalance/" + shot, page)
+        self.assertIn('id="screenshots"', page)
+        self.assertIn('loading="lazy"', page)
+
+    def test_archived_early_projects_are_separate_from_active_projects(self):
+        catalog = self.read_page("project")
+        self.assertIn('id="early-projects"', catalog)
+        self.assertIn("Не поддерживается", catalog)
+        self.assertIn("Описание и экраны", catalog)
+        self.assertIn('href="/project/workbalance/"', catalog)
+
+    def test_mobile_navigation_is_visible(self):
+        css = (ROOT / "styles.css").read_text(encoding="utf-8")
+        self.assertIn(".nav-links{display:flex;width:100%;", css)
+
     def test_site_pages_use_known_analytics_entrypoint(self):
         for route in (
             "project/lab-automation",
