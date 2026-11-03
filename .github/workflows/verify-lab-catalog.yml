@@ -17,8 +17,10 @@ on:
       - "data/lab-tools.json"
       - "scripts/sync_lab_catalog.py"
       - "tests/test_lab_catalog_sync.py"
+      - "tests/test_documentation_contracts.py"
       - "index.html"
       - "project/**"
+      - "privacy/**"
 
 permissions:
   contents: read
