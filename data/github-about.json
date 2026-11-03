@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "repositories": [
+    {
+      "repo": "MaxStriX324/maxstrix324.github.io",
+      "description": "Personal engineering portfolio: embedded electronics, power systems, EV projects and open-source lab tools.",
+      "homepage": "https://maxstrix324.github.io/",
+      "topics": [
+        "engineering",
+        "portfolio",
+        "embedded",
+        "github-pages",
+        "hardware"
+      ]
+    },
+    {
+      "repo": "MaxStriX324/WorkBalance-Android",
+      "description": "Offline-first Android work-time tracker with calendar, breaks, forecasts and local backups.",
+      "homepage": "https://maxstrix324.github.io/project/workbalance/",
+      "topics": [
+        "android",
+        "kotlin",
+        "jetpack-compose",
+        "room",
+        "time-tracking",
+        "offline-first"
+      ]
+    },
+    {
+      "repo": "MaxStriX324/kicad-bom-chipdip",
+      "description": "Convert KiCad BOM CSV to ChipDip-friendly TXT with component matching and verification reports.",
+      "homepage": "https://maxstrix324.github.io/project/kicad-bom-chipdip/",
+      "topics": [
+        "kicad",
+        "bom",
+        "python",
+        "electronics",
+        "components",
+        "chipdip"
+      ]
+    },
+    {
+      "repo": "MaxStriX324/kicad-svg-lasergrbl",
+      "description": "Batch-convert KiCad PCB SVG layers to 1:1 PNG images with LaserGRBL setup reports.",
+      "homepage": "https://maxstrix324.github.io/project/lab-automation/",
+      "topics": [
+        "kicad",
+        "lasergrbl",
+        "svg",
+        "pcb",
+        "python",
+        "cnc"
+      ]
+    },
+    {
+      "repo": "MaxStriX324/kicad-drl-cnc3018",
+      "description": "Convert KiCad Excellon drill files to single-pass GRBL TAP programs for CNC3018.",
+      "homepage": "https://maxstrix324.github.io/project/lab-automation/",
+      "topics": [
+        "kicad",
+        "excellon",
+        "grbl",
+        "cnc3018",
+        "gcode",
+        "python"
+      ]
+    },
+    {
+      "repo": "MaxStriX324/stm32-stlink-flasher",
+      "description": "Windows ST-Link GUI for STM32F103/F405 BIN flashing and verification using OpenOCD.",
+      "homepage": "https://maxstrix324.github.io/project/stm32-stlink-flasher/",
+      "topics": [
+        "stm32",
+        "stlink",
+        "openocd",
+        "powershell",
+        "embedded",
+        "firmware"
+      ]
+    },
+    {
+      "repo": "MaxStriX324/rigol-oscilloscope-sorter",
+      "description": "Organize RIGOL DHO800/DHO900 captures and export multichannel CSV data to Excel.",
+      "homepage": "https://maxstrix324.github.io/project/lab-automation/",
+      "topics": [
+        "rigol",
+        "oscilloscope",
+        "automation",
+        "python",
+        "xlsx",
+        "electronics"
+      ]
+    }
+  ]
+}
