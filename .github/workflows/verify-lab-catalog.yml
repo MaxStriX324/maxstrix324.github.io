@@ -8,15 +8,19 @@ on:
       - "tests/test_lab_catalog_sync.py"
       - "index.html"
       - "project/**"
+      - "privacy/**"
       - "README.md"
+      - "tests/test_documentation_contracts.py"
   push:
     branches: [main]
     paths:
       - "data/lab-tools.json"
       - "scripts/sync_lab_catalog.py"
       - "tests/test_lab_catalog_sync.py"
+      - "tests/test_documentation_contracts.py"
       - "index.html"
       - "project/**"
+      - "privacy/**"
 
 permissions:
   contents: read
@@ -30,7 +34,7 @@ jobs:
       - name: Validate generated website content
         run: |
           python3 scripts/sync_lab_catalog.py --check
-          python3 -m unittest discover -s tests -p "test_lab_catalog_sync.py" -v
+          python3 -m unittest discover -s tests -p "test_*.py" -v
       - name: Checkout public GitHub profile on main
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: actions/checkout@v4
