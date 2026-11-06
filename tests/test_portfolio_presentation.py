@@ -31,8 +31,8 @@ class PortfolioPresentationTests(unittest.TestCase):
             '\n        </div>\n      </div>\n    </section>', 1
         )[0]
         self.assertLess(showcase.index("LAB_TOOLS_GENERATED_START"),
-                        showcase.index('href="/project/900-ruk/"'))
-        self.assertLess(showcase.index('href="/project/900-ruk/"'),
+                        showcase.index('href="/project/900-pyk/"'))
+        self.assertLess(showcase.index('href="/project/900-pyk/"'),
                         showcase.index('href="/project/workbalance/"'))
 
     def test_project_catalog_labels_statuses_unambiguously(self):

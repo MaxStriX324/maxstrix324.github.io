@@ -61,7 +61,7 @@ class DocumentationContractsTests(unittest.TestCase):
         self.assertIn(".nav-links{display:flex;width:100%;", css)
 
     def test_900_ruk_gallery_preserves_all_six_full_screens(self):
-        page = self.read_page("project/900-ruk")
+        page = self.read_page("project/900-pyk")
         screenshots = {
             "desktop-afisha.webp": (1889, 908),
             "desktop-go.webp": (1883, 902),
@@ -90,7 +90,7 @@ class DocumentationContractsTests(unittest.TestCase):
                 self.assertIn(f'width="{width}" height="{height}"', page)
 
     def test_900_ruk_og_image_and_portfolio_cards(self):
-        page = self.read_page("project/900-ruk")
+        page = self.read_page("project/900-pyk")
         self.assertIn(
             'property="og:image" content="https://maxstrix324.github.io/assets/projects/900-ruk/desktop-afisha.webp"',
             page)
@@ -98,7 +98,7 @@ class DocumentationContractsTests(unittest.TestCase):
         catalog = self.read_page("project")
         for content in (home, catalog):
             self.assertIn("/assets/projects/900-ruk/desktop-afisha.webp", content)
-            self.assertIn('href="/project/900-ruk/"', content)
+            self.assertIn('href="/project/900-pyk/"', content)
         self.assertIn("В эксплуатации", catalog)
         css = (ROOT / "styles.css").read_text(encoding="utf-8")
         self.assertIn(".rk-screen img{display:block;width:100%;height:auto;", css)
@@ -113,6 +113,21 @@ class DocumentationContractsTests(unittest.TestCase):
         ):
             with self.subTest(route=route):
                 self.assertIn('src="/assets/analytics.js"', self.read_page(route))
+
+
+    def test_900_pyk_page_migration_seo(self):
+        """Keep the old link working while indexing the canonical new path."""
+        old_page = self.read_page("project/900-ruk")
+        new_page = self.read_page("project/900-pyk")
+        new_url = "https://maxstrix324.github.io/project/900-pyk/"
+        self.assertIn('http-equiv="refresh" content="0; url=' + new_url + '"', old_page)
+        self.assertIn('rel="canonical" href="' + new_url + '"', old_page)
+        self.assertIn('rel="canonical" href="' + new_url + '"', new_page)
+        self.assertIn('property="og:url" content="' + new_url + '"', new_page)
+        sitemap = (ROOT / "sitemap.xml").read_text(encoding="utf-8")
+        self.assertIn("<loc>" + new_url + "</loc>", sitemap)
+        self.assertNotIn("/project/900-ruk/", sitemap)
+
 
 
 if __name__ == "__main__":
