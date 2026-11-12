@@ -27,6 +27,19 @@
       ]
     },
     {
+      "repo": "MaxStriX324/kicad-component-library",
+      "description": "Open KiCad symbols, footprints and 3D models with one-click Windows installation and updates.",
+      "homepage": "https://github.com/MaxStriX324/kicad-component-library",
+      "topics": [
+        "kicad",
+        "pcb",
+        "symbols",
+        "footprints",
+        "electronics",
+        "hardware"
+      ]
+    },
+    {
       "repo": "MaxStriX324/kicad-bom-chipdip",
       "description": "Convert KiCad BOM CSV to ChipDip-friendly TXT with component matching and verification reports.",
       "homepage": "https://maxstrix324.github.io/project/kicad-bom-chipdip/",
